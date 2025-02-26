@@ -108,12 +108,6 @@ This frontend project provides an interactive UI to display and manage a hierarc
    ```
 4. Application will be available at `http://localhost:4200`
 
-### Running Tests
-
-```sh
-ng test
-```
-
 ### Assumptions
 
 - Pages are retrieved from the backend in a nested JSON format.
