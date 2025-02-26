@@ -1,0 +1,69 @@
+// .tree {
+//     list-style: none;
+//     padding-left: 20px;
+//     margin: 0;
+// }
+
+// .node {
+//     display: flex;
+//     align-items: center;
+//     padding: 4px 8px;
+//     border: 1px solid #ddd;
+//     border-radius: 4px;
+//     margin-bottom: 4px;
+//     background-color: #f9f9f9;
+// }
+
+// .toggle {
+//     width: 20px;
+//     text-align: center;
+//     font-weight: bold;
+//     margin-right: 8px;
+//     cursor: pointer;
+//     user-select: none;
+// }
+
+// .node-title {
+//     cursor: pointer;
+//     flex: 1;
+// }
+
+// .children {
+//     margin-left: 20px;
+//     transition: all 0.3s ease;
+// }
+
+.tree {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.node {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    background-color: #f9f9f9;
+}
+
+.toggle {
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.node-title {
+    cursor: pointer;
+    flex: 1;
+}
+
+.children {
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}

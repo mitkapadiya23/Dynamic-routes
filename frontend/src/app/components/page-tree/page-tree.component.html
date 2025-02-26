@@ -1,0 +1,22 @@
+<ul class="tree">
+  <li *ngFor="let page of pages">
+    <div class="node">
+      <span
+        *ngIf="page.children && page.children.length"
+        class="toggle"
+        (click)="toggle(page, $event)"
+      >
+        {{ page.expanded ? "–" : "+" }}
+      </span>
+      <span class="node-title" [routerLink]="page.path">
+        {{ page.title }} ({{ page.path }})
+      </span>
+    </div>
+    <div
+      class="children"
+      *ngIf="page.children && page.children.length && page.expanded"
+    >
+      <app-page-tree [pages]="page.children"></app-page-tree>
+    </div>
+  </li>
+</ul>

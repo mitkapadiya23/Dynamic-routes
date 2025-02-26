@@ -1,0 +1,25 @@
+<h2>Add New Page</h2>
+<form [formGroup]="pageForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="parent_id">Parent ID (optional):</label>
+    <select formControlName="parent_id" id="parent_id">
+      <option [value]="null">no parent</option>
+      @for (page of allPages;track page) {
+      <option [value]="page.id">{{ page.title }}</option>
+      }
+    </select>
+  </div>
+  <div>
+    <label for="slug">Slug:</label>
+    <input id="slug" type="text" formControlName="slug" required />
+  </div>
+  <div>
+    <label for="title">Title:</label>
+    <input id="title" type="text" formControlName="title" required />
+  </div>
+  <div>
+    <label for="content">Content:</label>
+    <textarea id="content" formControlName="content"></textarea>
+  </div>
+  <button type="submit" [disabled]="pageForm.invalid">Add Page</button>
+</form>
